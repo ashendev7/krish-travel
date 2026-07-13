@@ -7,7 +7,7 @@ import Destinations from "@/components/Destinations";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Krish Travel & Transportation | Sri Lanka Taxi Service & Tours",
+  title: "Travique | Sri Lanka Premium Taxi Service & Tours",
   description: "Experience the beauty of Sri Lanka with our premium transportation and tour services. Reliable, safe, and comfortable journeys tailored to your needs.",
 };
 

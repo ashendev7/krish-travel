@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Logo from "@/components/Logo";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,14 +39,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <span
-              className={cn(
-                "text-2xl font-bold uppercase tracking-tighter",
-                isScrolled ? "text-primary" : "text-white"
-              )}
-            >
-              Krish<span className="text-foreground">Travel</span>
-            </span>
+            <Logo scrolled={isScrolled} forceWhite={!isScrolled} />
           </Link>
 
           {/* Desktop Nav */}
